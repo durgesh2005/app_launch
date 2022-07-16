@@ -1,0 +1,553 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.head {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.black-background {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index:999;
+     opacity: 0;
+    animation: blacks 800ms;
+    background-color: black;
+}
+
+@keyframes blacks {
+    from {
+        opacity: 1;
+    }
+    to {
+    opacity: 0;
+    }
+}
+
+.blue {
+    background-color: #3f51b5!important;
+}
+
+.red {
+    background-color:  #f44336!important;
+}
+
+
+.header img {
+    width: 100%;
+}
+
+.header a {
+    position: absolute;
+    z-index: 999;
+     right:20px;
+     top: 50%;
+     color: white;
+     text-decoration: none;
+     border-radius: 10px;
+     background-color: black;
+     padding: 10px 20px;
+     font-size: 20px;
+}
+
+.header a:hover {
+    color: black !important;
+    background-color: white !important;
+}
+
+.blue:hover {
+    color: black !important;
+    background-color: white !important;
+}
+
+.red:hover {
+    color: black !important;
+    background-color: white !important;
+}
+
+.head-content {
+    position: absolute;
+    padding:20px;
+    left: 20px;
+    opacity: 0.6;
+    width: 33%;
+    border-radius:10px;
+    color: white;
+    text-align: center;
+    top: 40%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0);
+}
+
+.head-content:hover {
+    opacity: 1;
+}
+
+.head-content h2 {
+    padding:10px 10px 20px;
+}
+
+.underline {
+    width: 90%;
+    margin:0 auto;
+    display: block;
+    height: 1px;
+    opacity: 0.6;
+    text-align: center;
+    background-color: white;
+    color: white;
+}
+
+.head-content p {
+    padding: 20px;
+}
+
+.head-content button {
+    padding:10px;
+    background-color: #4CAF50;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.head-content button:hover {
+    background-color: rgb(219, 217, 217);
+    color: black;
+    cursor: pointer;
+}
+
+
+.download {
+    width: 60%;
+    margin:0 auto;
+    left: 20%;
+    padding: 40px;
+    background-color: white;
+    z-index: 999;
+    animation: download 700ms;
+    position: fixed;
+    top: 150px;
+}
+
+
+.clarity {
+    background-color: #f1f1f1!important;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+}
+
+.clarity img {
+    border-radius: 20px;
+    width: 25%;
+    filter: saturate(0.5);
+}
+.clarity-text {
+    width: 67%;
+    padding: 20px 40px;
+}
+
+.clarity-text h1 {
+    font-size: 60px;
+    color: black;
+}
+
+.clarity-text p {
+    padding: 20px 0px;
+    font-size: 20px;
+}
+
+.clarity-text  b {
+    font-size: 32px;
+}
+@keyframes download {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.download h1 {
+    letter-spacing: 4px;
+}
+
+.download a {
+    position: absolute;
+    top: 30px;
+    right: 70px;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.download p {
+    width:100%;
+    margin-top: 30px;
+}
+
+.icon {
+    font-size: 20px;
+margin-top: 20px;
+}
+
+.download input {
+    width: 100%;
+    padding: 14px;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.download button {
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #f44336;
+}
+
+.download button:hover {
+    background-color: rgb(226, 223, 223);
+    color: black;
+    cursor: pointer;
+}
+
+.green {
+    color: #4CAF50;
+    font-size: 50px;
+}
+
+.buy {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.buy-text {
+    padding-right:50px;
+}
+.buy-text h1 {
+    font-size: 60px;
+}
+
+.big {
+    font-size: 25px;
+}
+
+.buy-text p {
+    margin-top:20px;
+    font-size: 18px;
+}
+
+.buy-text button {
+    border: none;
+    margin-top: 30px;
+    padding: 18px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.buy-text button:hover {
+    background-color: rgb(201, 197, 197);
+    cursor: pointer;
+}
+
+.available {
+    font-size: 25px;
+    padding-left:10px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.green-icon {
+    color: #4CAF50;
+}
+
+.blue-icon {
+ color: #2196F3;
+}
+
+
+/* features starts here */
+
+.features {
+    color: white;
+    padding: 100px 50px;
+    background-color: #616161;
+}
+
+.features h1 {
+    padding-bottom: 20px;
+    font-size: 70px;
+    text-align: center;
+}
+
+.features h6 {
+    text-align: center;
+}
+
+.feature-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top:100px;
+}
+
+.features-text {
+    width: 25%;
+    text-align: center;
+}
+
+.orange {
+     color: orange;
+}
+
+.redi {
+    color: red;
+}
+
+.dark-orange {
+    color: #d2be0e;
+}
+
+.green {
+    color: #4CAF50;
+}
+
+.bluey {
+    color: #2196F3;
+}
+
+.pink {
+    color: rgb(245, 21, 58);
+}
+
+.gray {
+    color: gray;
+}
+
+.feature-text i {
+    font-size: 70px;
+    text-align: center;
+}
+
+.feature-text p {
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* pricing start here */
+
+.pricing {
+    padding: 80px;
+    text-align: center;
+}
+
+.pricing h1 {
+    font-size: 70px;
+}
+
+.pricing h5 {
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.basic-table {
+    display: flex;
+}
+
+.basic {
+    margin: 50px 10px;
+    width: 48%;
+    box-shadow: 0px 0px 3px 0px black;
+}
+
+.basic:hover {
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+.basic h2 {
+    padding: 30px;
+    font-weight: 300;
+    color: white;
+    background-color: #616161;
+}
+
+.basic p {
+    padding: 20px;
+    font-size: 17px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.basic h4 {
+    font-size: 35px;
+    font-weight: 300;
+    border-bottom: 1px solid gainsboro;
+    color: gray;
+    padding: 20px;
+}
+
+.basic-btn {
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+.basic-btn button {
+    border: none;
+    padding: 18px 22px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+.basic-btn button:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.redy {
+    background-color: #f44336 !important;
+}
+
+
+footer {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+}
+
+footer i{
+    font-size:50px;
+}
+
+footer p {
+    padding-top:20px;
+}
+
+@media screen and (max-width:400px) {
+       .head {
+        height:200px;
+        background-color: red;
+       }
+       
+    .head-content {
+        display: none;
+    }
+    
+    .black-background {
+        height:220px;
+    }
+
+.header a {
+   width: 100%;
+     top: 110%;
+     text-align: center;
+     border-radius: 0px;
+     padding: 10px 20px;
+     font-size: 15px;
+     right: 0px;
+}
+.buy {
+    text-align: center;
+    flex-direction: column;
+}
+
+.buy-text {
+    text-align: center;
+    width: 100%;
+    padding:20px;
+    margin-bottom: 30px;
+}
+
+.buy-text p {
+    text-align: justify;
+}
+
+.clarity {
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.clarity img {
+    width: 100%;
+    padding: 20px;
+}
+.clarity-text {
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.basic-table {
+    flex-direction: column;
+}
+
+.pricing {
+    padding: 20px;
+}
+
+.basic {
+    width: 100%;
+    margin:20px 0px;
+}
+
+
+.feature-text i {
+    font-size: 30px;
+    text-align: center;
+}
+
+.feature-text p {
+    font-size: 15px;
+}
+
+
+.download {
+    width: 100%;
+    left: 0%;
+    padding: 10px;
+}
+
+
+.download a {
+    top: 10px;
+    right: 20px;
+}
+
+.clarity-text h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.features h1  {
+    font-size: 50px;
+}
+
+}
+
+
